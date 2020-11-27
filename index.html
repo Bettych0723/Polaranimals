@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .fullpage {
+            width: 100%;
+            height: 100vh;
+            background-color: gray;
+            background-image: url("https://images.freeimages.com/images/large-previews/b14/snow-mountain-1572794.jpg");
+            background-position: center;
+            background-size: 100%;
+            background-attachment: fixed;
+            transition: 0.3s;
+            
+        }
+        .fullpage:hover{
+            background-size: 110%;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.3);
+            position: relative;
+
+        }
+
+        .text-box-bg-color {
+            background-color: rgba(54, 54, 54, 0.9);
+        }
+        
+        .one-third .text-box {
+            color: rgb(88, 88, 88);
+            font-weight: 600;
+            font-family: Microsoft JhengHei;
+        }
+
+        .fullpage .text-box {
+            letter-spacing: 3px;
+        }
+
+        .text-box {
+            /* width: 250px;
+            height: 70px; */
+            color: white;
+            font-size: 35px;
+            text-align: center;
+            line-height: 70px;
+            /* position: absolute;
+            left: calc(50% - 125px);
+            top: calc(50% - 35px); */
+
+            padding: 20px 50px;
+            float: left;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box-area-white {
+            width: 100%;
+            background-color: white;
+            color: grey;
+            padding: 30px 100px;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        .one-third {
+            width: 100%;
+            height: 350px;
+            background-color: yellow;
+            background-image: url("https://img.ltn.com.tw/Upload/partner/page/2020/04/09/200409-7794-1-FldAd.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #section3 {
+            background-image: url("https://storage.googleapis.com/planet4-hongkong-stateless/2018/01/10bcf58b-gp0strh0t_pressmedia-2.jpg");
+        }
+
+        #section5 {
+            background-image: url("https://images.chinatimes.com/newsphoto/2019-07-29/1024/20190729003677.jpg");
+        }
+
+        .text-area-black {
+            width: 100%;
+            background-color: #282E34;
+            color: white;
+            padding: 60px 80px;
+
+        }
+
+        #navbar {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(250, 244, 231);
+            padding: 10px;
+        }
+
+        .btn {
+            width: 100px;
+            height: 60px;
+            /* background-color: rgb(241, 134, 134); */
+            display: block;
+            text-align: center;
+            font-size: 15PX;
+            line-height: 60px;
+            font-weight: 900;
+            text-decoration: none;
+            color: grey;
+            float: right;
+            font-family: Microsoft JhengHei;
+        }
+
+        /* #LOGO {
+            width: 50PX;
+            height: 50PX;
+            background-color: cadetblue;
+            float: left;
+        } */
+        #gototop{
+            width: 100PX;
+            height: 100PX;
+            background-color: rgba(139, 176, 255,0.8);
+            color: rgb(255, 255, 255);
+
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100PX;
+            font-size: 25PX;
+            font-family: Microsoft JhengHei;
+            font-weight: 800;
+            border: white 0PX solid;
+
+            position: fixed;
+            right: 20PX;
+            bottom: 20PX;
+            z-index: 100;
+
+            transition: 1s;
+        }
+        #gototop:hover{
+            background-color: white;
+            color: rgb(135, 198, 250);
+        }
+        #gototop:active{
+            width: 125px;
+            height: 125px;
+            font-size: 35PX;
+            line-height: 125PX;
+        }
+        .btn:hover{
+            color: cornflowerblue;
+            font-size: 17PX;
+        }
+        .btn:active{
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <a href="#"><div id="gototop">TOP</div></a>
+    
+
+    <div id="navbar">
+        <!-- <div id="LOGO"></div> -->
+        <a class="btn" href="#section7">SEE YOU</a>
+        <a class="btn" href="#section5">北極熊寶寶</a>
+        <a class="btn" href="#section3">國王企鵝</a>
+    </div>
+    <div id="section1" class="fullpage">
+        <div class="mask">
+            <div class="text-box text-box-bg-color">Hello! Miss You</div>
+        </div>
+    </div>
+
+    <div id="section2" class="box-area-white">
+        <h1>PARALLAX DEMO</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ut atque, nam nulla
+        placeat provident necessitatibus ullam, quisquam quam sequi magni fugiat, saepe cum at exercitationem eum
+        cupiditate ad numquam!Dolore voluptatem ab molestiae natus odit vel illo doloremque voluptate incidunt ea libero
+        cupiditate alias eligendi blanditiis id, porro neque quisquam nobis, illum, laborum deleniti. Facere suscipit ab
+        incidunt laudantium.
+    </div>
+
+    <div id="section3" class="one-third">
+        <div class="mask">
+            <div class="text-box">國王企鵝</div>
+        </div>
+    </div>
+
+    <div id="section4" class="text-area-black">
+        Scroll up and down to really get the feeling of how Parallax Scrolling works.
+    </div>
+
+    <div id="section5" class="one-third">
+        <div class="mask">
+            <div class="text-box">北極熊寶寶</div>
+        </div>
+    </div>
+
+    <div id="section6" class="text-area-black">
+        Scroll up and down to really get the feeling of how Parallax Scrolling works.
+    </div>
+
+    <div id="section7" class="fullpage">
+        <div class="mask">
+            <div class="text-box text-box-bg-color">See You!</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
